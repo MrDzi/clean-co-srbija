@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'DINNextLTPro-Light';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Light.eot');
   src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Light.woff2') format('woff2'),
        url('../fonts/DINNextLTPro-Light.woff') format('woff'),
        url('../fonts/DINNextLTPro-Light.ttf') format('truetype'),
        url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Regular';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Regular.eot');
   src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Regular.woff2') format('woff2'),
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Medium';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Medium.eot');
   src: url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Medium.woff2') format('woff2'),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Italic';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Italic.eot');
   src: url('../fonts/DINNextLTPro-Italic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Italic.woff2') format('woff2'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Bold';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Bold.eot');
   src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Bold.woff2') format('woff2'),
@@ -60,7 +60,7 @@
 
 
 @font-face {
-  font-family: 'DINNextSlabPro-Medium';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Medium.eot');
   src: url('../fonts/DINNextSlabPro-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Medium.woff2') format('woff2'),
@@ -72,19 +72,19 @@
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Light';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Light.eot');
   src: url('../fonts/DINNextSlabPro-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Light.woff2') format('woff2'),
        url('../fonts/DINNextSlabPro-Light.woff') format('woff'),
        url('../fonts/DINNextSlabPro-Light.ttf') format('truetype'),
        url('../fonts/DINNextSlabPro-Light.svg#DINNextSlabPro-Light') format('svg');
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Bold';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Bold.eot');
   src: url('../fonts/DINNextSlabPro-Bold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Bold.woff2') format('woff2'),
@@ -96,7 +96,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Regular';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Regular.eot');
   src: url('../fonts/DINNextSlabPro-Regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Regular.woff2') format('woff2'),
@@ -116,11 +116,92 @@
    ========================================================================== */
 
 body {
-    font-family: 'DINNextLTPro-Light';
+    font-family: 'DINNextLTPro', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-family: 'DINNextSlabPro';
+    font-weight: medium;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 
+/***********************************************
+            FIXED HEADER
+***********************************************/
 
+.cleanco-header-fixed {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 10px 0 13px;
+}
+
+.cleanco-header-info li {
+    float: left;
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 35px;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #474747;
+}
+
+.cleanco-header-info li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0 none;
+}
+
+.cleanco-header-info li p {
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.cleanco-header-info li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 34px;
+    color: #474747;
+}
+
+.cleanco-header-info span {
+    font-weight: 300;
+    color: #b4b4b4;
+}
+
+.cleanco-header-social li {
+    float: right;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.cleanco-header-social a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cleanco-header-social a i {
+    font-size: 25px;
+    color: #1b1b1b;
+    line-height: 1.5;
+}
 
 
 
