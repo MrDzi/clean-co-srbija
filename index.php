@@ -63,16 +63,24 @@
 
         <!-- BIG BKG IMAGE SECTION -->
         <div class="cleanco-big-image-bkg">
-            
-        <div class="cleanco-big-image-text">
-
-            <a href="#"><img src="assets/img/cleanco-logo.png" /></a>
-
-            <p>Koristite svoje vreme pametno - održavanje prepustite profesionalcima.</p>
-
-            <p>Spremni smo da preuzmemo kompletno održavanje vašeg poslovnog i životnog prostora.</p>
-
+            <img src="assets/img/header-bkg.jpg" class="img-responsive" />
         </div>
+        <div class="cleanco-big-image-content-wrapper">
+
+            <div class="container">
+                
+                <div class="cleanco-big-image-text">
+
+                    <a href="#" class="cleanco-logo"><img src="assets/img/cleanco-logo.png" /></a>
+
+                    <div class="cleanco-big-image-hero">
+                        <h1>Koristite svoje vreme pametno - održavanje prepustite profesionalcima.</h1>
+                        <p>Spremni smo da preuzmemo kompletno održavanje vašeg poslovnog i životnog prostora.</p>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <!-- BIG BKG IMAGE SECTION ENDS -->
@@ -86,8 +94,8 @@
                         <p>Zakažite pranje Vašeg vozila na lokaciji koja Vama odgovara!</p>
                     </div>
 
-                    <div class="col-md-3">
-                        <a class="cleanco-cta-btn" href="#" role="button">Link</a>
+                    <div class="col-md-3 cleanco-cta-btn">
+                        <a class="cleanco-default-btn pull-right" href="#" role="button">Zakaži pranje <i class="fa fa-chevron-right"></i></a>
                     </div>
 
                 </div>
@@ -96,55 +104,59 @@
         <!-- CTA SECTION ENDS -->
 
         <!--  M A I N   S E C T I O N  -->
+        <div class="cleanco-main-section">
 
             <!-- SERVICES SECTION -->
-            <section class="cleanco-services">
+            <article class="cleanco-services">
                 <div class="container">
                     
-                    <h1>Naše usluge</h1>
+                    <h2>Naše usluge</h2>
 
                     <div class="row">
                         
                         <div class="col-md-4">
-                            <img src="assets/img/usluge-1.png" />
+                            <div class="cleanco-services-single-inner pull-left">
+                                <img src="assets/img/usluge-1.png" />
 
-                            <h3>Mobilna perionica</h2>
+                                <h3>Mobilna perionica</h3>
 
-                            <p>Da bismo izašli u susret potrebama naših klijenata, osposobili smo pokretnu perionicu kojoj nije potreban izvor napajanja. Brzo stižemo do Vas i efikasno izvršavamo usluge pranja. Posedujemo izuzetne najsavremenije mašine i iskusan tim, koji Vam u svakom trenutku mogu pružiti usluge čišćenja, pranja, pranja pod visokim pritiskom, kao i dubinsko čišćenje vozila i kućnog nameštaja.</p>
-                            <p>Mašine za uklanjanje prljavštine koriste vodenu paru čime se smanjuje upotreba štetnih hemijskih sredstava, steriliše površina automobila i postiže veća efikasnost i bolji rezultat pranja.</p>
-                            <p>Od konkurencije nas izdvaja fleksibilnost  i vrhunska tehnologija pranja. Takođe, u ponudi imamo i veliki izbor auto kozmetike.</p>
-
+                                <p>Da bismo izašli u susret potrebama naših klijenata, osposobili smo pokretnu perionicu kojoj nije potreban izvor napajanja. Brzo stižemo do Vas i efikasno izvršavamo usluge pranja. Posedujemo izuzetne najsavremenije mašine i iskusan tim, koji Vam u svakom trenutku mogu pružiti usluge čišćenja, pranja, pranja pod visokim pritiskom, kao i dubinsko čišćenje vozila i kućnog nameštaja.</p>
+                                <p>Mašine za uklanjanje prljavštine koriste vodenu paru čime se smanjuje upotreba štetnih hemijskih sredstava, steriliše površina automobila i postiže veća efikasnost i bolji rezultat pranja.</p>
+                                <p>Od konkurencije nas izdvaja fleksibilnost  i vrhunska tehnologija pranja. Takođe, u ponudi imamo i veliki izbor auto kozmetike.</p>
+                            </div>
                         </div>
 
                         <div class="col-md-4">
-                            <img src="assets/img/usluge-2.png" />
+                            <div class="cleanco-services-single-inner cleanco-services-single-inner-middle">
+                                <img src="assets/img/usluge-2.png" />
 
-                            <h3>Facility Management</h2>
+                                <h3>Facility Management</h3>
 
-                            <p>Odeljenje  _________ bavi se poslovima održavanja i upravljanja poslovnim objektima.</p>
-                            <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima. U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
-                            <p>Na ovaj način dugoročno investirate u svoj poslovni objekat, a mi ćemo brigom o njemu indirektno uticati na komercijalnu vrednost i značajno mu produžiti vek trajanja.</p>
-
+                                <p>Odeljenje  _________ bavi se poslovima održavanja i upravljanja poslovnim objektima.</p>
+                                <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima. U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
+                                <p>Na ovaj način dugoročno investirate u svoj poslovni objekat, a mi ćemo brigom o njemu indirektno uticati na komercijalnu vrednost i značajno mu produžiti vek trajanja.</p>
+                            </div>
                         </div>
 
                         <div class="col-md-4">
-                            <img src="assets/img/usluge-3.png" />
+                            <div class="cleanco-services-single-inner pull-right">
+                                <img src="assets/img/usluge-3.png" />
 
-                            <h3>Projektovanje, izgradnja i održavanje zelenih površina</h2>
+                                <h3>Projektovanje, izgradnja i održavanje zelenih površina</h3>
 
-                            <p>Firma CleanCo je između ostalog specijalizovana i za pružanje kompletnih usluga iz oblasti pejzažne arhitekture i hortikulture.</p>
-                            <p>U ovoj oblasti pokrivamo sve faze projektovanja, izgradnje i održavanja zelenih površina.</p>
-                            <p>Posedujemo punu licencu za projektovanje i izvođenje radova na uređenju zelenih povšina i trudimo se da kvalitetnom i profesionalnom uslugom ispunimo sve zahteve svojih klijenata.</p>
+                                <p>Firma CleanCo je između ostalog specijalizovana i za pružanje kompletnih usluga iz oblasti pejzažne arhitekture i hortikulture.</p>
+                                <p>U ovoj oblasti pokrivamo sve faze projektovanja, izgradnje i održavanja zelenih površina.</p>
+                                <p>Posedujemo punu licencu za projektovanje i izvođenje radova na uređenju zelenih povšina i trudimo se da kvalitetnom i profesionalnom uslugom ispunimo sve zahteve svojih klijenata.</p>
 
+                            </div>
                         </div>
-
                     </div>
                 </div>
-            </section>
+            </article>
             <!-- SERVICES SECTION ENDS -->
 
             <!-- CLIENTS SECTION -->
-            <section class="cleanco-clients">
+            <article class="cleanco-clients">
                 <div class="container">
 
                     <h2>Naši klijenti:</h2>
@@ -153,53 +165,69 @@
                         
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/vip-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/vip-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/piraeus-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/piraeus-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/actavis-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/actavis-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/ericsson-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/ericsson-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/bambi-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/bambi-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/agricole-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/agricole-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/sport-vision-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/sport-vision-logo.png" />
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="cleanco-clients-rectangle">
-                                <img src="assets/img/vb-leasing-logo.png" />
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <img src="assets/img/vb-leasing-logo.png" />
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
                 </div>
-            </section>
+            </article>
             <!-- CLIENTS SECTION ENDS -->
 
             <!-- TESTIMONIALS SECTION -->
-            <section class="cleanco-testimonials">
+            <article class="cleanco-testimonials">
                 <div class="container">
 
                     <h2>Rekli su o nama</h2>
@@ -216,42 +244,44 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <p>“Maecenas et facilisis quam. Nullam molestie, tellus eu laoreet euismod, massa dui interdum eros, eget imperdiet lorem elit eu libero. Sed faucibus ante vel metus vestibulum dictum. Morbi nec convallis neque. Pellentesque et orci tempus nunc malesuada mattis. Sed tempus orci volutpat hendrerit commodo.”</p>
-                                <p>Ime i prezime</p>
+                                <p><strong>Ime i prezime</strong></p>
                             </div>
                             <div class="item">
                                 <p>“Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus.”</p>
-                                <p>Ime i prezime</p>
+                                <p><strong>Ime i prezime</strong></p>
                             </div>
                         </div>
 
                         <!-- Controls -->
                         <a class="left carousel-control" href="#cleanco-testimonials-carousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <i class="fa fa-chevron-circle-left"></i>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="right carousel-control" href="#cleanco-testimonials-carousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <i class="fa fa-chevron-circle-right"></i>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
 
                 </div>
-            </section>
+            </article>
             <!-- TESTIMONIALS SECTION ENDS -->
 
+        </div>
         <!--  M A I N   S E C T I O N  ENDS -->
 
         <!-- GOOGLE MAP SECTION -->
         <div class="cleanco-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11317.904700441662!2d20.417203049731324!3d44.83223518835949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a650b4310aecb%3A0xa917a3484eff14e4!2s1e+Klare+Cetkin%2C+Beograd!5e0!3m2!1sen!2srs!4v1429643284801" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11317.904700441662!2d20.417203049731324!3d44.83223518835949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a650b4310aecb%3A0xa917a3484eff14e4!2s1e+Klare+Cetkin%2C+Beograd!5e0!3m2!1sen!2srs!4v1429643284801" width="100%" height="330" frameborder="0" style="border:0"></iframe>
         </div>
         <!-- GOOGLE MAP SECTION ENDS -->
 
         <!-- FOOTER -->
         <footer>
-            <div class="container">
+            
                 
                 <div class="cleanco-footer-black">
+                <div class="container">
 
                     <h3>O nama</h3>
 

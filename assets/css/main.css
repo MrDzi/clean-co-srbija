@@ -30,7 +30,7 @@
        url('../fonts/DINNextLTPro-Medium.woff') format('woff'),
        url('../fonts/DINNextLTPro-Medium.ttf') format('truetype'),
        url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -67,7 +67,7 @@
        url('../fonts/DINNextSlabPro-Medium.woff') format('woff'),
        url('../fonts/DINNextSlabPro-Medium.ttf') format('truetype'),
        url('../fonts/DINNextSlabPro-Medium.svg#DINNextSlabPro-Medium') format('svg');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -123,16 +123,43 @@ body {
 }
 
 h1, h2 {
-    font-family: 'DINNextSlabPro';
-    font-weight: medium;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 60px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DINNextSlabPro';    
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.cleanco-default-btn {
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px 30px;
+    letter-spacing: 1.1px;
+    display: block;
+    text-align: center;
+    width: 235px;
+}
+
+.cleanco-default-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cleanco-default-btn i {
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 
@@ -144,6 +171,12 @@ ul {
     background-color: #1b1b1b;
     color: #fff;
     padding: 10px 0 13px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
 }
 
 .cleanco-header-info li {
@@ -204,14 +237,219 @@ ul {
 }
 
 
+/***********************************************
+          BIG BKG IMAGE SECTION
+***********************************************/
+
+.cleanco-big-image-bkg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+}
+
+.cleanco-big-image-content-wrapper {
+    height: 640px;
+}
+
+.cleanco-big-image-text {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.cleanco-logo {
+    display: block;
+    margin-bottom: 55px;
+}
+
+.cleanco-big-image-hero {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.cleanco-big-image-hero h1 {
+    font-family: 'DINNextSlabPro';
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    -webkit-text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+    -moz-text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+    text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+}
+
+.cleanco-big-image-hero p {
+    font-family: 'DINNextSlabPro';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+    -moz-text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+}
 
 
+.cleanco-cta {
+    background-color: #fbfbfb;
+    background-image: url(../img/cleanco-cta-pattern.png);
+    padding: 25px 0;
+    border-bottom: 1px solid #e4e3e3;
+}
+
+.cleanco-cta-info p {
+    color: #454545;
+    font-size: 21px;
+    line-height: 3;
+    margin-bottom: 0;
+}
 
 
+/***********************************************
+          MAIN SECTION
+***********************************************/
+
+.cleanco-main-section {
+    background-color: #fff;
+}
+
+.cleanco-main-section h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0 0 60px;
+}
+
+.cleanco-main-section article {
+    padding: 60px 0;
+}
 
 
+/***********  SERVICES SECTION  ***************/
+
+.cleanco-services h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.cleanco-services-single-inner {
+    width: 92%;
+}
+
+.cleanco-services-single-inner-middle {
+    margin: 0 auto;
+}
 
 
+/***********  OUR CLIENTS SECTION  ***********/
+
+.cleanco-clients {
+    height: 600px;
+    background-image: url(../img/cleanco-clients.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cleanco-clients h2 {
+    color: #fff;
+}
+
+.cleanco-clients-rectangle {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 216px;
+    height: 132px;
+    display: table;
+    margin-bottom: 55px;
+}
+
+.cleanco-clients-rectangle-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cleanco-clients-rectangle-inner {
+    margin: auto;
+}
+
+/***********  TESTIMONIALS SECTION  ***********/
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+}
+
+.carousel-indicators li.active {
+    border: none;
+    background-color: #000;
+}
+
+.cleanco-testimonials {
+    height: 460px;
+}
+
+#cleanco-testimonials-carousel {
+    height: 250px;
+}
+
+.carousel-inner {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-inner p {
+    margin-bottom: 30px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  width: 8%;
+  font-size: 35px;
+  color: #c0c0c0;
+  text-align: center;
+  text-shadow: none;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+.carousel-control:focus {
+    color: #c0c0c0;
+}
+
+.carousel-control:hover {
+    color: #ababab;
+}
+
+.carousel-control.left {
+    background-image: none;
+    left: 15px;
+}
+
+.carousel-control.right {
+    background-image: none;
+    right: 15px;
+}
+
+/***********  GOOGLE MAP SECTION  ***********/
+
+.cleanco-map {
+    background-color: #2e2e2e;
+}
+
+footer .cleanco-footer-black {
+    background-color: #2e2e2e;
+    color: #fff;
+}
 
 /* ==========================================================================
    Helper classes
