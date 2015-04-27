@@ -138,13 +138,17 @@ ul {
     list-style: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .cleanco-default-btn {
     border-radius: 2px;
     background-color: #45b3e4;
     color: #fff;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 500;
     padding: 20px 30px;
     letter-spacing: 1.1px;
     display: block;
@@ -177,6 +181,9 @@ ul {
     width: 100%;
     z-index: 1;
     display: none;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
 }
 
 .cleanco-header-info li {
@@ -306,6 +313,104 @@ ul {
     margin-bottom: 0;
 }
 
+.cleanco-cta-form {
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e4e3e3;
+    padding: 40px 0;
+    display: none;
+    width: 100%;
+}
+
+.cleanco-cta-btn {
+    position: relative;
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 25px;
+    display: block;
+    text-align: left;
+    width: 260px;
+    border: 1px solid #45b3e4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cleanco-cta-btn i {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cleanco-cta-btn:focus,
+.cleanco-cta-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cleanco-scheduling-btn.form-opened {
+    background-color: #fff;
+    color: #45b3e4;
+    border: 1px solid #45b3e4;
+}
+
+.cleanco-form-btn {
+    position: relative;
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    width: 260px;
+    border: 1px solid #4f4f4f;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#cleanco-scheduling .form-control {
+      width: 100%;
+      height: 40px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #999;
+      border-radius: 2px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#cleanco-scheduling label {
+    margin-bottom: 0;
+    color: #888;
+}
+
+#cleanco-scheduling label span {
+    color: #45b3e4;
+}
+
 
 /***********************************************
           MAIN SECTION
@@ -336,6 +441,14 @@ ul {
 
 .cleanco-services-single-inner {
     width: 92%;
+    opacity: 0;
+    position: relative;
+    top: 30px;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .cleanco-services-single-inner-middle {
@@ -383,15 +496,22 @@ ul {
 
 .carousel-indicators li {
     border: 1px solid #000;
+    margin: 0;
 }
 
 .carousel-indicators li.active {
     border: none;
     background-color: #000;
+    width: 10px;
+    height: 10px;
+    margin: 0;
 }
 
 .cleanco-testimonials {
     height: 460px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
 }
 
 #cleanco-testimonials-carousel {
@@ -410,17 +530,22 @@ ul {
 }
 
 .carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: auto;
-  width: 8%;
-  font-size: 35px;
-  color: #c0c0c0;
-  text-align: center;
-  text-shadow: none;
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    width: 8%;
+    font-size: 35px;
+    color: #c0c0c0;
+    text-align: center;
+    text-shadow: none;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    }
 
 .carousel-control:focus {
     color: #c0c0c0;
@@ -442,13 +567,53 @@ ul {
 
 /***********  GOOGLE MAP SECTION  ***********/
 
-.cleanco-map {
+#cleanco-map {
     background-color: #2e2e2e;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
 }
 
-footer .cleanco-footer-black {
+/****************  FOOTER  ****************/
+
+.cleanco-main-footer {
+    background-color: #fff;
+}
+
+.cleanco-footer-black {
     background-color: #2e2e2e;
     color: #fff;
+    padding: 25px 0 40px;
+    text-align: center;
+}
+
+.cleanco-footer-black h3 {
+    color: #F1ED5C;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.cleanco-footer-social {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cleanco-footer-copyright {
+    z-index: 1;
+    text-align: center;
+    padding: 30px 0;
+    background-image: url("../img/cleanco-shadow.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.cleanco-footer-copyright p {
+    margin: 0;
+}
+
+.cleanco-footer-copyright a {
+    color: #333;
+    font-weight: bold;
 }
 
 /* ==========================================================================

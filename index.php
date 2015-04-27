@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/datepicker.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -94,13 +95,72 @@
                         <p>Zakažite pranje Vašeg vozila na lokaciji koja Vama odgovara!</p>
                     </div>
 
-                    <div class="col-md-3 cleanco-cta-btn">
-                        <a class="cleanco-default-btn pull-right" href="#" role="button">Zakaži pranje <i class="fa fa-chevron-right"></i></a>
+                    <div class="col-md-3">
+                        <a id="cleanco-scheduling-btn" class="cleanco-cta-btn pull-right" href="#" role="button">Zakazivanje pranja <i class="fa fa-chevron-down"></i></a>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <div class="cleanco-cta-form">
+            <div class="container">
+                <div class="row">
+                    
+                    <form id="cleanco-scheduling">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="name">Ime i prezime<span>*</span></label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail<span>*</span></label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Broj telefona<span>*</span></label>
+                                <input type="text" class="form-control" id="phoneNumber">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="location">Lokacija<span>*</span></label>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                                <label for="date">Datum<span>*</span></label>
+                                <input id="date" class="form-control" type="text">
+                                <span class="add-on"><i class="icon-th"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Vreme<span>*</span></label>
+                                <select id="time" class="form-control">
+                                  <option>09:00</option>
+                                  <option>09:30</option>
+                                  <option>10:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="cleanco-form-btn pull-right">Zakaži pranje</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
         <!-- CTA SECTION ENDS -->
 
         <!--  M A I N   S E C T I O N  -->
@@ -271,48 +331,56 @@
         <!--  M A I N   S E C T I O N  ENDS -->
 
         <!-- GOOGLE MAP SECTION -->
-        <div class="cleanco-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11317.904700441662!2d20.417203049731324!3d44.83223518835949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a650b4310aecb%3A0xa917a3484eff14e4!2s1e+Klare+Cetkin%2C+Beograd!5e0!3m2!1sen!2srs!4v1429643284801" width="100%" height="330" frameborder="0" style="border:0"></iframe>
+        <div id="cleanco-map">
+            
         </div>
         <!-- GOOGLE MAP SECTION ENDS -->
 
         <!-- FOOTER -->
-        <footer>
-            
+        <footer class="cleanco-main-footer">            
                 
-                <div class="cleanco-footer-black">
+            <div class="cleanco-footer-black">
                 <div class="container">
+                    <div class="row">
 
-                    <h3>O nama</h3>
+                        <div class="col-md-8 col-md-offset-2">
 
-                    <p>Privredno društvo CleanCo d.o.o. osnovano je 2011. godine u Beogradu u cilju pružanja higijenskih i usluga održavanja kako u poslovnim tako i u privatnim objektima.</p>
-                    <p>Naša specijalnost je kompletno održavanje poslovnih prostora, domaćinstava, njihove okoline, kao i voznog parka kojim raspolažu, po sistemu „ključ u ruke“. U cilju daljeg izlaska u susret svojim klijentima, uveli smo i usluge mobilne perionice. CleanCo je tu da Vam obezbedi profesionalno obučen personal koji će svojim umećem i vrhunskom opremom, pravovrememno učiniti da Vaš radni prostor i dom zablistaju.</p>
-                    <p>Od samog osnivanja naša misija je pružanje vrhunskog kvaliteta usluga kroz fleksibilnost, dostupnost i profesionalizam. Da smo postavili nove standarde potvrđuje i lista naših zadovoljnih klijenata.</p>
+                            <h3>O nama</h3>
 
-                    <ul class="cleanco-header-social">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                    </ul>
+                            <p>Privredno društvo CleanCo d.o.o. osnovano je 2011. godine u Beogradu u cilju pružanja higijenskih i usluga održavanja kako u poslovnim tako i u privatnim objektima.</p>
+                            <p>Naša specijalnost je kompletno održavanje poslovnih prostora, domaćinstava, njihove okoline, kao i voznog parka kojim raspolažu, po sistemu „ključ u ruke“. U cilju daljeg izlaska u susret svojim klijentima, uveli smo i usluge mobilne perionice. CleanCo je tu da Vam obezbedi profesionalno obučen personal koji će svojim umećem i vrhunskom opremom, pravovrememno učiniti da Vaš radni prostor i dom zablistaju.</p>
+                            <p>Od samog osnivanja naša misija je pružanje vrhunskog kvaliteta usluga kroz fleksibilnost, dostupnost i profesionalizam. Da smo postavili nove standarde potvrđuje i lista naših zadovoljnih klijenata.</p>
 
+                            <ul class="cleanco-header-social cleanco-footer-social">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+
+                            </div>
+
+                    </div>
                 </div>
 
-                <div class="cleanco-footer-shadow"></div>
+            </div>
 
-                <div class="cleanco-footer-copyright">
-                    <p>Copyright &copy; 2015 Company Name. All rights reserved.</p>                    
-                </div>
+            <div class="cleanco-footer-shadow"></div>
 
+            <div class="cleanco-footer-copyright">
+                <div class="container">
+                    <p>Copyright &copy; 2015 <a href="#">Company Name</a>. All rights reserved.</p>    
+                </div>                
             </div>
         </footer>
         <!-- FOOTER ENDS -->
 
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/js/vendor/bootstrap-datepicker.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 
