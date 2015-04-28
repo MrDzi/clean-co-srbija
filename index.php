@@ -64,7 +64,6 @@
 
         <!-- BIG BKG IMAGE SECTION -->
         <div class="cleanco-big-image-bkg">
-            <img src="assets/img/header-bkg.jpg" class="img-responsive" />
         </div>
         <div class="cleanco-big-image-content-wrapper">
 
@@ -111,50 +110,62 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="name">Ime i prezime<span>*</span></label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail<span>*</span></label>
-                                <input type="email" class="form-control" id="email">
+                                <input type="email" class="form-control" id="email" required>
                             </div>
+                        </div>
+
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="phoneNumber">Broj telefona<span>*</span></label>
                                 <input type="text" class="form-control" id="phoneNumber">
                             </div>
-                        </div>
-
-                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="location">Lokacija<span>*</span></label>
-                                <select class="form-control">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
+                                <select class="form-control cleanco-scheduling-location" required>
+                                  <option disabled selected></option>
+                                  <option value="0">BOP</option>
+                                  <option value="1">Đorđa Stanojevića</option>
+                                  <option value="2">Vaša lokacija</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" disabled>
+                                <input type="text" class="form-control" id="customLocation" placeholder="Upišite svoju lokaciju" disabled required>
                             </div>
                         </div>
 
                         <div class="col-md-4">
-                            <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <div class="input-append date form-group" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                                 <label for="date">Datum<span>*</span></label>
-                                <input id="date" class="form-control" type="text">
-                                <span class="add-on"><i class="icon-th"></i></span>
+                                <input id="date" class="form-control datepicker" type="text" required>
                             </div>
                             <div class="form-group">
                                 <label for="time">Vreme<span>*</span></label>
-                                <select id="time" class="form-control">
+                                <select id="time" class="form-control" required>
                                   <option>09:00</option>
                                   <option>09:30</option>
                                   <option>10:00</option>
+                                  <option>10:30</option>
+                                  <option>11:00</option>
+                                  <option>11:30</option>
+                                  <option>12:00</option>
+                                  <option>12:30</option>
+                                  <option>13:00</option>
+                                  <option>13:30</option>
+                                  <option>14:00</option>
+                                  <option>14:30</option>
+                                  <option>15:00</option>
+                                  <option>15:30</option>
+                                  <option>16:00</option>
+                                  <option>16:30</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="cleanco-form-btn pull-right">Zakaži pranje</button>
+                            <button type="submit" id="cleanco-scheduling-submit" class="cleanco-form-btn pull-right">Zakaži pranje</button>
                         </div>
                     </form>
 
@@ -381,6 +392,7 @@
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         <script src="assets/js/vendor/bootstrap-datepicker.js"></script>
+        <script src="assets/js/vendor/jquery.validate.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 
