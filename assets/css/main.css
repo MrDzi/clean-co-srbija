@@ -235,12 +235,21 @@ a:hover {
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .cleanco-header-social a i {
     font-size: 25px;
     color: #1b1b1b;
     line-height: 1.5;
+}
+
+.cleanco-header-social a:hover {
+    background-color: #F1ED5C;
 }
 
 
@@ -252,6 +261,7 @@ a:hover {
     background-image: url("../img/header-bkg.jpg");
     position: fixed;
     background-size: cover;
+    background-position: center center;
     top: 0;
     left: 0;
     height: 640px;
@@ -472,6 +482,10 @@ a:hover {
     transition: all 0.9s ease-in-out;
 }
 
+.cleanco-services-single-inner img {
+    border-radius: 4px;
+}
+
 .cleanco-services-single-inner-middle {
     margin: 0 auto;
 }
@@ -483,6 +497,7 @@ a:hover {
     height: 600px;
     background-image: url(../img/cleanco-clients.png);
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -505,8 +520,14 @@ a:hover {
     text-align: center;
 }
 
-.cleanco-clients-rectangle-inner {
+.cleanco-clients-rectangle-inner img {
     margin: auto;
+}
+
+.cleanco-tablet-client p {
+    font-family: 'DINNextSlabPro';
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /***********  TESTIMONIALS SECTION  ***********/
@@ -593,6 +614,14 @@ a:hover {
     height: 300px;
     margin: 0px;
     padding: 0px;
+}
+
+#cleanco-map-info-content p {
+    margin-bottom: 0; 
+}
+
+#cleanco-map-info-content h3 {
+    margin-top: 10px;
 }
 
 /****************  FOOTER  ****************/

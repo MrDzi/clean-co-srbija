@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="assets/css/vendor/datepicker.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive-styles.css">
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -21,15 +22,15 @@
         <![endif]-->
 
         <!-- FIXED HEADER (appears on scroll) -->
-        <header class="cleanco-header-fixed">
+        <header class="cleanco-header-fixed hidden-xs">
             <div class="container">
                 <div class="row">
                     
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3">
                         <a href="#"><img src="assets/img/cleanco-logo-small.png" /></a>
                     </div>
 
-                    <div class="col-md-7">
+                    <div class="col-md-7 col-sm-9">
                         <ul class="cleanco-header-info clearfix">
                             <li>
                                 <i class="fa fa-phone"></i>
@@ -41,12 +42,12 @@
                             </li>
                             <li>
                                 <i class="fa fa-clock-o"></i>
-                                <p>Pon-pet: 09-18h, sub: 09-15h</br><span>Nedeljom ne radimo</span></p>
+                                <p>09-18h, sub: 09-15h</br><span>Nedeljom ne radimo</span></p>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-2 hidden-sm">
                         <ul class="cleanco-header-social">
                             <li>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -64,6 +65,7 @@
 
         <!-- BIG BKG IMAGE SECTION -->
         <div class="cleanco-big-image-bkg">
+            
         </div>
         <div class="cleanco-big-image-content-wrapper">
 
@@ -90,11 +92,11 @@
             <div class="container">
                 <div class="row">
                     
-                    <div class="cleanco-cta-info col-md-9">
+                    <div class="cleanco-cta-info col-sm-8 col-xs-12">
                         <p>Zakažite pranje Vašeg vozila na lokaciji koja Vama odgovara!</p>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-sm-4 col-xs-12">
                         <a id="cleanco-scheduling-btn" class="cleanco-cta-btn pull-right" href="#" role="button">Zakazivanje pranja <i class="fa fa-chevron-down"></i></a>
                     </div>
 
@@ -107,10 +109,10 @@
                 <div class="row">
                     
                     <form id="cleanco-scheduling">
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="form-group">
                                 <label for="name">Ime i prezime<span>*</span></label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail<span>*</span></label>
@@ -118,10 +120,10 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="form-group">
                                 <label for="phoneNumber">Broj telefona<span>*</span></label>
-                                <input type="text" class="form-control" id="phoneNumber">
+                                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
                             </div>
                             <div class="form-group">
                                 <label for="location">Lokacija<span>*</span></label>
@@ -133,11 +135,11 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="customLocation" placeholder="Upišite svoju lokaciju" disabled required>
+                                <input type="text" class="form-control" id="customLocation" name="customLocation" placeholder="Upišite svoju lokaciju" disabled required>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="input-append date form-group" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                                 <label for="date">Datum<span>*</span></label>
                                 <input id="date" class="form-control datepicker" type="text" required>
@@ -164,7 +166,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-xs-12">
                             <button type="submit" id="cleanco-scheduling-submit" class="cleanco-form-btn pull-right">Zakaži pranje</button>
                         </div>
                     </form>
@@ -185,9 +187,9 @@
 
                     <div class="row">
                         
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="cleanco-services-single-inner pull-left">
-                                <img src="assets/img/usluge-1.png" />
+                                <img src="assets/img/usluge-1.jpg" class="img-responsive" />
 
                                 <h3>Mobilna perionica</h3>
 
@@ -197,9 +199,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="cleanco-services-single-inner cleanco-services-single-inner-middle">
-                                <img src="assets/img/usluge-2.png" />
+                                <img src="assets/img/usluge-2.jpg" class="img-responsive" />
 
                                 <h3>Facility Management</h3>
 
@@ -209,9 +211,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div class="cleanco-services-single-inner pull-right">
-                                <img src="assets/img/usluge-3.png" />
+                                <img src="assets/img/usluge-3.jpg" class="img-responsive" />
 
                                 <h3>Projektovanje, izgradnja i održavanje zelenih površina</h3>
 
@@ -234,59 +236,67 @@
 
                     <div class="row">
                         
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/vip-logo.png" />
+                                    <img src="assets/img/vip-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/piraeus-logo.png" />
+                                    <img src="assets/img/piraeus-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/actavis-logo.png" />
+                                    <img src="assets/img/actavis-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/ericsson-logo.png" />
+                                    <img src="assets/img/ericsson-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/bambi-logo.png" />
+                                    <img src="assets/img/bambi-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/agricole-logo.png" />
+                                    <img src="assets/img/agricole-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/sport-vision-logo.png" />
+                                    <img src="assets/img/sport-vision-logo.png" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="cleanco-clients-rectangle">
                                 <div class="cleanco-clients-rectangle-inner">
-                                    <img src="assets/img/vb-leasing-logo.png" />
+                                    <img src="assets/img/vb-leasing-logo.png" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden-lg hidden-md col-sm-4 hidden-xs cleanco-tablet-client">
+                            <div class="cleanco-clients-rectangle">
+                                <div class="cleanco-clients-rectangle-inner">
+                                    <p>I mnogi drugi...</p>
                                 </div>
                             </div>
                         </div>
@@ -324,11 +334,11 @@
                         </div>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#cleanco-testimonials-carousel" role="button" data-slide="prev">
+                        <a class="left carousel-control hidden-xs" href="#cleanco-testimonials-carousel" role="button" data-slide="prev">
                             <i class="fa fa-chevron-circle-left"></i>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#cleanco-testimonials-carousel" role="button" data-slide="next">
+                        <a class="right carousel-control hidden-xs" href="#cleanco-testimonials-carousel" role="button" data-slide="next">
                             <i class="fa fa-chevron-circle-right"></i>
                             <span class="sr-only">Next</span>
                         </a>

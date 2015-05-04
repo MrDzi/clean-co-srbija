@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var $window = $(window);
 
 	$window.on("scroll", function(){
-		if ($window.scrollTop() > 20) {
+		if ($window.scrollTop() > 600) {
 			$(".cleanco-header-fixed").fadeIn(400);
 		}
 		else {
@@ -66,15 +66,58 @@ $(document).ready(function(){
 
 	// Google Maps API
 	var map;
+	var marker;
 	function initialize() {
+		var cleanco = new google.maps.LatLng(44.8345862, 20.4148105);
 	  var mapOptions = {
 	    zoom: 15,
-	    center: new google.maps.LatLng(44.8345862, 20.4148105),
+	    center: cleanco,
 	    scrollwheel: false
 	  };
+
 	  map = new google.maps.Map(document.getElementById('cleanco-map'),
 	      mapOptions);
-	}
+
+
+
+	  var contentString = '<div id="cleanco-map-info-content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">CleanCo</h3>'+
+      '<div id="bodyContent">'+
+      '<p>Klare Cetkin 1e/12</p>' +
+      '<p>+381 11 64 93 31</p>' +
+      '</div>'+
+      '</div>';
+
+	  var infowindow = new google.maps.InfoWindow({
+	      content: contentString
+	  });
+
+	  marker = new google.maps.Marker({
+	    map:map,
+	    position: cleanco,
+	    animation: google.maps.Animation.DROP,
+	    title: 'Cleanco'
+	  });
+	  google.maps.event.addListener(marker, 'click', toggleBounce);
+
+	  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+	};
+
+	function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 	google.maps.event.addDomListener(window, 'load', initialize);
 
