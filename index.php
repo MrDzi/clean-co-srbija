@@ -188,7 +188,7 @@
                     <div class="row">
                         
                         <div class="col-sm-4 col-xs-12">
-                            <div class="cleanco-services-single-inner pull-left">
+                            <div class="cleanco-services-single-inner cleanco-services-single-inner-left">
                                 <img src="assets/img/usluge-1.jpg" class="img-responsive" />
 
                                 <h3>Mobilna perionica</h3>
@@ -212,7 +212,7 @@
                         </div>
 
                         <div class="col-sm-4 col-xs-12">
-                            <div class="cleanco-services-single-inner pull-right">
+                            <div class="cleanco-services-single-inner cleanco-services-single-inner-right">
                                 <img src="assets/img/usluge-3.jpg" class="img-responsive" />
 
                                 <h3>Projektovanje, izgradnja i održavanje zelenih površina</h3>
@@ -404,6 +404,7 @@
         <script src="assets/js/vendor/bootstrap-datepicker.js"></script>
         <script src="assets/js/vendor/jquery.validate.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/jquery.mobile.custom.min.js"></script>
         <script src="assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

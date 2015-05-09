@@ -262,6 +262,7 @@ a:hover {
     position: fixed;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
     height: 640px;
@@ -475,11 +476,19 @@ a:hover {
     opacity: 0;
     position: relative;
     top: 30px;
-    -webkit-transition: all 0.9s ease-in-out;
-    -moz-transition: all 0.9s ease-in-out;
-    -ms-transition: all 0.9s ease-in-out;
-    -o-transition: all 0.9s ease-in-out;
-    transition: all 0.9s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.cleanco-services-single-inner-left {
+    float: left;
+}
+
+.cleanco-services-single-inner-right {
+    float: right;
 }
 
 .cleanco-services-single-inner img {
@@ -551,6 +560,7 @@ a:hover {
 
 .cleanco-testimonials {
     height: 460px;
+    background-image: url("../img/cleanco-testimonials-pattern.png");
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
@@ -573,7 +583,7 @@ a:hover {
 
 .carousel-control {
     position: absolute;
-    top: 0;
+    top: 10%;
     bottom: auto;
     width: 8%;
     font-size: 35px;
@@ -622,6 +632,10 @@ a:hover {
 
 #cleanco-map-info-content h3 {
     margin-top: 10px;
+}
+
+#bodyContent p {
+    font-weight: normal;
 }
 
 /****************  FOOTER  ****************/
