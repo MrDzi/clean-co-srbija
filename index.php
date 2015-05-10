@@ -6,8 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="robots" content="noindex">
         <title>CleanCo</title>
-        <meta name="description" content="">
+        <meta name="description" content="CleanCo - kompletno održavanje poslovnog i životnog prostora. Mobilna perionica za dubinsko čišćenje vozila i kućnog nameštaja.">
+        <meta name="keywords" content="pranje, mobilno pranje, mobilno pranje vozila, perionica, odrzavanje, pranje beograd">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/vendor/datepicker.css">
@@ -142,7 +144,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <div class="input-append date form-group" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                                 <label for="date">Datum<span>*</span></label>
-                                <input id="date" class="form-control datepicker" type="text" required>
+                                <input id="date" class="form-control datepicker" required>
                             </div>
                             <div class="form-group">
                                 <label for="time">Vreme<span>*</span></label>
@@ -196,6 +198,7 @@
                                 <p>Da bismo izašli u susret potrebama naših klijenata, osposobili smo pokretnu perionicu kojoj nije potreban izvor napajanja. Brzo stižemo do Vas i efikasno izvršavamo usluge pranja. Posedujemo izuzetne najsavremenije mašine i iskusan tim, koji Vam u svakom trenutku mogu pružiti usluge čišćenja, pranja, pranja pod visokim pritiskom, kao i dubinsko čišćenje vozila i kućnog nameštaja.</p>
                                 <p>Mašine za uklanjanje prljavštine koriste vodenu paru čime se smanjuje upotreba štetnih hemijskih sredstava, steriliše površina automobila i postiže veća efikasnost i bolji rezultat pranja.</p>
                                 <p>Od konkurencije nas izdvaja fleksibilnost  i vrhunska tehnologija pranja. Takođe, u ponudi imamo i veliki izbor auto kozmetike.</p>
+                                <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
                             </div>
                         </div>
 
@@ -208,6 +211,7 @@
                                 <p>Odeljenje  _________ bavi se poslovima održavanja i upravljanja poslovnim objektima.</p>
                                 <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima. U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
                                 <p>Na ovaj način dugoročno investirate u svoj poslovni objekat, a mi ćemo brigom o njemu indirektno uticati na komercijalnu vrednost i značajno mu produžiti vek trajanja.</p>
+                                <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
                             </div>
                         </div>
 
@@ -220,6 +224,7 @@
                                 <p>Firma CleanCo je između ostalog specijalizovana i za pružanje kompletnih usluga iz oblasti pejzažne arhitekture i hortikulture.</p>
                                 <p>U ovoj oblasti pokrivamo sve faze projektovanja, izgradnje i održavanja zelenih površina.</p>
                                 <p>Posedujemo punu licencu za projektovanje i izvođenje radova na uređenju zelenih povšina i trudimo se da kvalitetnom i profesionalnom uslugom ispunimo sve zahteve svojih klijenata.</p>
+                                <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
 
                             </div>
                         </div>

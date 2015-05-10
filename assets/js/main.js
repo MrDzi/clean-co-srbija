@@ -83,8 +83,6 @@ $(document).ready(function(){
 	  map = new google.maps.Map(document.getElementById('cleanco-map'),
 	      mapOptions);
 
-
-
 	  var contentString = '<div id="cleanco-map-info-content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -108,21 +106,19 @@ $(document).ready(function(){
 	  google.maps.event.addListener(marker, 'click', toggleBounce);
 
 	  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
+	    infowindow.open(map,marker);
+	  });
 
 	};
 
 	function toggleBounce() {
 
-  if (marker.getAnimation() != null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
+	if (marker.getAnimation() != null) {
+	    marker.setAnimation(null);
+	  } else {
+	    marker.setAnimation(google.maps.Animation.BOUNCE);
+	  }
+	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -149,15 +145,26 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			}
 		});
 	}
+	
+	// Services view more dor mobile
+	$(".cleanco-services-btn").on("click", function(e){
+		e.preventDefault();
+		$(this).parent().css("height", "auto");
+		$(this).css("display", "none");
+	});
 
 	// Datepicker
-	$('.datepicker').datepicker();
+	$('.datepicker').datepicker()
+		.on("changeDate", function(){
+			$(this).datepicker("hide");
+		});
 
+	// Enabling carousel swipe for mobile 
 	$("#cleanco-testimonials-carousel").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("#cleanco-testimonials-carousel").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
+		$(this).carousel('prev');  
+    		});  
+	$("#cleanco-testimonials-carousel").swipeleft(function() {  
+	    $(this).carousel('next');  
+    });
 
 });
