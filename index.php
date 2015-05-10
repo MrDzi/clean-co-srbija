@@ -144,7 +144,7 @@
                         <div class="col-sm-4 col-xs-12">
                             <div class="input-append date form-group" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                                 <label for="date">Datum<span>*</span></label>
-                                <input id="date" class="form-control datepicker" required>
+                                <input id="date" class="form-control datepicker" readonly="true" required>
                             </div>
                             <div class="form-group">
                                 <label for="time">Vreme<span>*</span></label>
