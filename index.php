@@ -11,6 +11,8 @@
         <meta name="description" content="CleanCo - kompletno održavanje poslovnog i životnog prostora. Mobilna perionica za dubinsko čišćenje vozila i kućnog nameštaja.">
         <meta name="keywords" content="pranje, mobilno pranje, mobilno pranje vozila, perionica, odrzavanje, pranje beograd">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/vendor/datepicker.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -213,7 +215,8 @@
                                 <div class="cleanco-services-single-inner-text">
                                     <h3>Upravljanje objektima</h3>
 
-                                    <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima. U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
+                                    <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima.</p>
+                                    <p>U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
                                     <p>Na ovaj način dugoročno investirate u svoj poslovni objekat, a mi ćemo brigom o njemu indirektno uticati na komercijalnu vrednost i značajno mu produžiti vek trajanja.</p>
 
                                     <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>

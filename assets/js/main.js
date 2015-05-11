@@ -4,11 +4,11 @@ $(document).ready(function(){
 	var $window = $(window);
 
 	$window.on("scroll", function(){
-		if ($window.scrollTop() > 600) {
-			$(".cleanco-header-fixed").fadeIn(400);
+		if ($window.scrollTop() > 50) {
+			$(".cleanco-header-fixed").css("top", "0");
 		}
 		else {
-			$(".cleanco-header-fixed").fadeOut(300);
+			$(".cleanco-header-fixed").css("top", "-80px");
 		}
 	});
 
