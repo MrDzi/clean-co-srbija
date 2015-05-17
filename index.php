@@ -29,7 +29,7 @@
         <header class="cleanco-header-fixed hidden-xs">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-md-3 col-sm-3">
                         <a href="#"><img src="assets/img/cleanco-logo-small.png" alt="CleanCo logo" /></a>
                     </div>
@@ -111,6 +111,10 @@
         <div class="cleanco-cta-form">
             <div class="container">
                 <div class="row">
+
+                    <div class="col-xs-12 cleanco-cta-form-info">
+                        <p><span>*</span>Uskoro i za fizička lica</p>
+                    </div>
                     
                     <form id="cleanco-scheduling">
                         <div class="col-sm-4 col-xs-12">
@@ -203,7 +207,7 @@
                                     <p>Mašine za uklanjanje prljavštine koriste vodenu paru čime se smanjuje upotreba štetnih hemijskih sredstava, steriliše površina automobila i postiže veća efikasnost i bolji rezultat pranja.</p>
                                     <p>Od konkurencije nas izdvaja fleksibilnost  i vrhunska tehnologija pranja. Takođe, u ponudi imamo i veliki izbor auto kozmetike.</p>
 
-                                    <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
+                                    <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button">...</a>
                                 </div>
                             </div>
                         </div>

@@ -47,6 +47,7 @@ $(document).ready(function(){
 			 rules: {
 
 			    name: {
+			      required: true,
 			      minlength: 5,
 			      text: true
 			    }
@@ -56,6 +57,7 @@ $(document).ready(function(){
 			  messages: {
 
 			  	name: {
+			  	  required: "Ovo polje je obavezno",
 			      minlength: "Neophodno je uneti vise od 5 karaktera",
 			      text: "Iskljucivo slova"
 			    }

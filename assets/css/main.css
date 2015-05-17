@@ -183,11 +183,11 @@ a:hover {
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .cleanco-header-info li {
@@ -333,9 +333,22 @@ a:hover {
 .cleanco-cta-form {
     background-color: #fbfbfb;
     border-bottom: 1px solid #e4e3e3;
-    padding: 40px 0;
+    padding: 30px 0 40px;
     display: none;
     width: 100%;
+}
+
+.cleanco-cta-form-info p {
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ababab;
+}
+
+.cleanco-cta-form-info p span {
+    color: #E2382A;
+    font-weight: bold;
 }
 
 .cleanco-cta-btn {
@@ -419,9 +432,27 @@ a:hover {
       transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+#cleanco-scheduling .form-control.error {
+    border: 1px solid #333;
+    border-bottom-right-radius: 0;
+}
+
 #cleanco-scheduling label {
     margin-bottom: 0;
     color: #888;
+}
+
+#cleanco-scheduling label.error {
+  font-weight: normal;
+  color: #fff;
+  background: #333;
+  padding: 0 7px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 13px;
+  line-height: 1.4;
+  position: absolute;
+  right: 15px;
 }
 
 #cleanco-scheduling label span {
