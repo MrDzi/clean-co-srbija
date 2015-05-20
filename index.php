@@ -392,6 +392,8 @@
                             <p>Naša specijalnost je kompletno održavanje poslovnih prostora, domaćinstava, njihove okoline, kao i voznog parka kojim raspolažu, po sistemu „ključ u ruke“. U cilju daljeg izlaska u susret svojim klijentima, uveli smo i usluge mobilne perionice. CleanCo je tu da Vam obezbedi profesionalno obučen personal koji će svojim umećem i vrhunskom opremom, pravovrememno učiniti da Vaš radni prostor i dom zablistaju.</p>
                             <p>Od samog osnivanja naša misija je pružanje vrhunskog kvaliteta usluga kroz fleksibilnost, dostupnost i profesionalizam. Da smo postavili nove standarde potvrđuje i lista naših zadovoljnih klijenata.</p>
 
+                            <p class="cleanco-mobile-contact hidden-lg hidden-md hidden-sm">Kontakt telefon: <span>+381 11 614 93 31</span></p>
+
                             <ul class="cleanco-header-social cleanco-footer-social">
                                 <li>
                                     <a href="#"><i class="fa fa-facebook"></i></a>

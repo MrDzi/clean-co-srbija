@@ -72,9 +72,7 @@ $(document).ready(function(){
 	function initialize() {
 	  var cleanco = new google.maps.LatLng(44.8345862, 20.4148105);
 	  var windowWidth = $(window).width();
-	  console.log(windowWidth);
 	  var isDraggable = windowWidth > 732 ? true : false;
-	  console.log(isDraggable);
 	  var mapOptions = {
 	    zoom: 15,
 	    center: cleanco,
@@ -128,21 +126,12 @@ $(document).ready(function(){
 	if ($window.width() > 974) {
 		$window.on("scroll", function(){
 			if ($window.scrollTop() > 200) {
-				$(".cleanco-services-single-inner-left").css({
-					"opacity" : "1",
-					"top" : "0"
-				});
+				$(".cleanco-services-single-inner-left").addClass("cleanco-services-single-inner-after");
 				setTimeout(function(){
-					$(".cleanco-services-single-inner-middle").css({
-					"opacity" : "1",
-					"top" : "0"
-				});
+					$(".cleanco-services-single-inner-middle").addClass("cleanco-services-single-inner-after");
 				}, 200);
 				setTimeout(function(){
-					$(".cleanco-services-single-inner-right").css({
-					"opacity" : "1",
-					"top" : "0"
-				});
+					$(".cleanco-services-single-inner-right").addClass("cleanco-services-single-inner-after");
 				}, 400);
 			}
 		});

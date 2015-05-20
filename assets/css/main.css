@@ -343,7 +343,6 @@ a:hover {
     font-style: italic;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    border-bottom: 1px dashed #ababab;
 }
 
 .cleanco-cta-form-info p span {
@@ -359,7 +358,7 @@ a:hover {
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 18px 25px;
+    padding: 17px 25px;
     display: block;
     text-align: left;
     width: 246px;
@@ -402,7 +401,7 @@ a:hover {
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 15px 20px;
+    padding: 17px 20px;
     display: block;
     text-align: center;
     width: 246px;
@@ -523,6 +522,11 @@ input#date {
     transition-property: opacity, top;
 }
 
+.cleanco-services-single-inner-after {
+    opacity: 1;
+    top: 0;
+}
+
 .cleanco-services-single-inner-left {
     float: left;
 }
@@ -531,12 +535,12 @@ input#date {
     float: right;
 }
 
-.cleanco-services-single-inner img {
-    border-radius: 4px;
-}
-
 .cleanco-services-single-inner-middle {
     margin: 0 auto;
+}
+
+.cleanco-services-single-inner img {
+    border-radius: 4px;
 }
 
 
@@ -700,6 +704,15 @@ input#date {
 .cleanco-footer-social {
     display: inline-block;
     margin-top: 30px;
+}
+
+.cleanco-mobile-contact {
+    margin-top: 30px;
+}
+
+.cleanco-mobile-contact span {
+    font-weight: bold;
+    color: #F1ED5C;
 }
 
 .cleanco-footer-copyright {
