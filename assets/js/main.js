@@ -38,28 +38,82 @@ $(document).ready(function(){
 		}
 		else {
 			$("#customLocation").css("opacity", "0").attr("disabled", true);
+			$("#customLocation").siblings(".error").remove();
 		}
 	});
 
 	// jQuery Validate
 	$("#cleanco-scheduling-submit").on("click", function(){
+		$("#date").attr("readonly", false);
 		$("#cleanco-scheduling").validate({
 			 rules: {
 
 			    name: {
-			      required: true,
-			      minlength: 5,
-			      text: true
+			        required: true,
+			        minlength: 5
+			    },
+
+			    email: {
+			    	required: true,
+			    	email: true
+			    },
+
+			    phoneNumber: {
+			    	required: true,
+			    	number: true
+			    },
+
+			    location: {
+			    	required: true
+			    },
+
+			    date: {
+			    	required: true
+			    },
+
+			    time: {
+			    	required: true
+			    },
+
+			    customLocation: {
+			    	required: true
 			    }
+
 
 			  },
 
 			  messages: {
 
 			  	name: {
-			  	  required: "Ovo polje je obavezno",
-			      minlength: "Neophodno je uneti vise od 5 karaktera",
-			      text: "Iskljucivo slova"
+			  	  	required: "Ovo polje je obavezno",
+			      	minlength: "Neophodno je uneti vise od 5 karaktera",
+			      	text: "Koristite skljucivo slova"
+			    },
+
+			    email: {
+			    	required: "Ovo polje je obavezno",
+			    	email: "Unesite validnu e-mail adresu"
+			    },
+
+			    phoneNumber: {
+			    	required: "Ovo polje je obavezno",
+			    	number: "Unesite broj telefona"
+			    },
+
+			    location: {
+			    	required: "Ovo polje je obavezno"
+			    },
+
+			    date: {
+			    	required: "Ovo polje je obavezno"
+			    },
+
+			    time: {
+			    	required: "Ovo polje je obavezno"
+			    },
+
+			    customLocation: {
+			    	required: "Ovo polje je obavezno"
 			    }
 
 			  }
@@ -148,7 +202,16 @@ $(document).ready(function(){
 	$('.datepicker').datepicker()
 		.on("changeDate", function(){
 			$(this).datepicker("hide");
-		});
+	});
+
+	// Carousel
+	$('.carousel').carousel({
+        interval: 5000
+    }).on('slide.bs.carousel', function (e)
+    {
+        var nextH = $(e.relatedTarget).height();
+        $(this).find('.active.item').parent().animate({ height: nextH }, 500);
+    });
 
 	// Enabling carousel swipe for mobile 
 	$("#cleanco-testimonials-carousel").swiperight(function() {  

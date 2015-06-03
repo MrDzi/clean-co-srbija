@@ -16,10 +16,8 @@
 }
 
 
-
 /** BOOTSTRAP 3 TABLET **/
 @media (min-width: 750px) and (max-width: 990px) {
-
 
 	.cleanco-services-single-inner {
 		width: 100%;
@@ -54,7 +52,6 @@
 		width: 220px;
 		font-size: 15px;
 	}
-
 
 	.cleanco-main-section h2 {
 		font-size: 36px;
@@ -91,10 +88,14 @@
 	.carousel-control {
 		top: 20px;
 	}
+	
+	.cleanco-header-social li {
+		padding-top: 0;
+	}
 
 	.cleanco-header-social a {
-		width: 45px;
-		height: 45px;
+		width: 43px;
+		height: 43px;
 	}
 
 	.cleanco-header-social a i {
@@ -103,7 +104,6 @@
 	}
 	
 }
-
 
 
 /** BOOTSTRAP 3 MOBILE **/

@@ -481,6 +481,28 @@ input#date {
     cursor: pointer;
 }
 
+.cleanco-form-messages h2 {
+    margin-bottom: 20px;
+}
+
+.cleanco-form-messages {
+    text-align: center;
+}
+
+.cleanco-form-messages p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cleanco-form-messages i {
+    font-size: 60px;
+    color: #45b3e4;
+    margin-bottom: 30px;
+}
+
+.cleanco-form-messages.error i {
+    color: #FE5F55;
+}
 
 /***********************************************
           MAIN SECTION
@@ -578,7 +600,7 @@ input#date {
 }
 
 .cleanco-tablet-client p {
-    font-family: 'DINNextSlabPro';
+   font-family: 'DINNextLTPro', sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
@@ -710,7 +732,7 @@ input#date {
     margin-top: 30px;
 }
 
-.cleanco-mobile-contact span {
+.cleanco-mobile-contact span a {
     font-weight: bold;
     color: #F1ED5C;
 }
