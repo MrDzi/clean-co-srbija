@@ -1,4 +1,11 @@
-<?php require_once("header.php"); ?>
+<?php require_once("header.php"); 
+if (isset($_GET['sent'])){
+	$sent = $_GET['sent'] ;
+}
+else {
+	$sent='';
+}
+?>
 
 <!-- BIG BKG IMAGE SECTION -->
 <div class="cleanco-big-image-bkg">
@@ -41,17 +48,17 @@
     </div>
 </div>
 
-<div class="cleanco-cta-form">
+<div class="cleanco-cta-form" <?php if ($sent=="true") {echo "style='display: block;'";} ?>>
     <div class="container">
         <div class="row">
 
-            <?php if ($_GET['sent']=="true") { ?>
+            <?php if ($sent=="true") { ?>
             <div class="cleanco-form-messages">
                 <i class="fa fa-check-square-o"></i>
                 <p>Uspešno ste poslali zahtev za zakazivanje pranja.</p>
                 <p>Očekujte potvrdu putem mail-a u najkraćem roku.</p>
             </div>
-            <?php } else if ($_GET['sent']=="false") { ?>
+            <?php } else if ($sent=="false") { ?>
             <div class="cleanco-form-messages error">
                 <i class="fa fa-times-circle-o"></i>
                 <p>Došlo je do greške u slanju poruke</p>
@@ -60,11 +67,12 @@
 
             <?php } else { ?>
 
-            <div class="col-xs-12 cleanco-cta-form-info">
+            <div class="col-xs-12 cleanco-cta-form-info hidden-lg hidden-md hidden-sm">
                 <p><span>*</span>Uskoro i za fizička lica</p>
             </div>
             
-            <form id="cleanco-scheduling">
+            <form action="formprocess.php" id="cleanco-scheduling" method="post">
+            <img src="assets/img/cleanco-badge.png" alt="" class="cleanco-badge hidden-xs">
                 <div class="col-sm-4 col-xs-12">
                     <div class="form-group">
                         <label for="name">Ime i prezime<span>*</span></label>
@@ -85,8 +93,8 @@
                         <label for="location">Lokacija<span>*</span></label>
                         <select class="form-control cleanco-scheduling-location" id="location" name="location" >
                           <option value="" disabled selected>- izaberite -</option>
-                          <option value="0">BOP</option>
-                          <option value="1">Đorđa Stanojevića</option>
+                          <option value="0">BOP - Đorđa Stanojevića 12-14</option>
+                          <option value="1">SBC - Milentija Popovića 5a</option>
                           <option value="2">Vaša lokacija</option>
                         </select>
                     </div>
@@ -96,7 +104,7 @@
                 </div>
 
                 <div class="col-sm-4 col-xs-12">
-                    <div class="input-append date form-group" id="dp3" data-date-format="dd-mm-yyyy">
+                    <div class="input-append date form-group" id="dp3">
                         <label for="date">Datum<span>*</span></label>
                         <input id="date" name="date" class="form-control datepicker" readonly />
                     </div>
@@ -104,22 +112,39 @@
                         <label for="time">Vreme<span>*</span></label>
                         <select id="time" name="time" class="form-control">
                           <option value="" disabled selected>- izaberite -</option>
-                          <option value="0">09:00</option>
-                          <option value="1">09:30</option>
-                          <option value="2">10:00</option>
-                          <option value="3">10:30</option>
-                          <option value="4">11:00</option>
-                          <option value="5">11:30</option>
-                          <option value="6">12:00</option>
-                          <option value="7">12:30</option>
-                          <option value="8">13:00</option>
-                          <option value="9">13:30</option>
-                          <option value="10">14:00</option>
-                          <option value="11">14:30</option>
-                          <option value="12">15:00</option>
-                          <option value="13">15:30</option>
-                          <option value="14">16:00</option>
-                          <option value="15">16:30</option>
+                          <option value="0">06:00</option>
+                          <option value="1">06:30</option>
+                          <option value="2">07:00</option>
+                          <option value="3">07:30</option>
+                          <option value="4">08:00</option>
+                          <option value="5">08:30</option>
+                          <option value="6">09:00</option>
+                          <option value="7">09:30</option>
+                          <option value="8">10:00</option>
+                          <option value="9">10:30</option>
+                          <option value="10">11:00</option>
+                          <option value="11">11:30</option>
+                          <option value="12">12:00</option>
+                          <option value="13">12:30</option>
+                          <option value="14">13:00</option>
+                          <option value="15">13:30</option>
+                          <option value="16">14:00</option>
+                          <option value="17">14:30</option>
+                          <option value="18">15:00</option>
+                          <option value="19">15:30</option>
+                          <option value="20">16:00</option>
+                          <option value="21">16:30</option>
+                          <option value="22">17:00</option>
+                          <option value="23">17:30</option>
+                          <option value="24">18:00</option>
+                          <option value="25">18:30</option>
+                          <option value="26">19:00</option>
+                          <option value="27">19:30</option>
+                          <option value="28">20:00</option>
+                          <option value="29">20:30</option>
+                          <option value="30">21:00</option>
+                          <option value="31">21:30</option>
+                          <option value="32">22:00</option>
                         </select>
                     </div>
                 </div>
@@ -167,10 +192,10 @@
                         <img src="assets/img/usluge-2.jpg" class="img-responsive" alt="Upravljanje objektima" />
 
                         <div class="cleanco-services-single-inner-text">
-                            <h3>Upravljanje objektima</h3>
+                            <h3>Čišćenje i održavanje objekata</h3>
 
                             <p>Uvođenjem potrebnih  servisa za rad i funkcionisanje poslovnih objekata povećavamo kvalitet života i rada u njima.</p>
-                            <p>U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takodje, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
+                            <p>U zavisnosti od kategorije objekta, standarda gradnje, opremljenosti, lokacije i namene, ponudićemo Vam nivo, obim i vrstu usluge za svaki objekat pojedinačno. Nudimo usluge  čišćenja i održavanja prostorija, industrijskog čišćenja, domarskih usluga i popravki. Takođe, nudimo usluge hemijskog čišćenja podnih površina, mašinskih instalacija i opreme, kuhinja restorana, restoranske opreme, roštilja, ventilacija,  AC sistema i grejanje.</p>
                             <p>Na ovaj način dugoročno investirate u svoj poslovni objekat, a mi ćemo brigom o njemu indirektno uticati na komercijalnu vrednost i značajno mu produžiti vek trajanja.</p>
 
                             <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
@@ -187,7 +212,7 @@
 
                             <p>Firma CleanCo je između ostalog specijalizovana i za pružanje kompletnih usluga iz oblasti pejzažne arhitekture i hortikulture.</p>
                             <p>U ovoj oblasti pokrivamo sve faze projektovanja, izgradnje i održavanja zelenih površina.</p>
-                            <p>Posedujemo punu licencu za projektovanje i izvođenje radova na uređenju zelenih povšina i trudimo se da kvalitetnom i profesionalnom uslugom ispunimo sve zahteve svojih klijenata.</p>
+                            <p>Posedujemo punu licencu za projektovanje i izvođenje radova na uređenju zelenih površina i trudimo se da kvalitetnom i profesionalnom uslugom ispunimo sve zahteve svojih klijenata.</p>
 
                             <a class="cleanco-services-btn hidden-lg hidden-md hidden-sm" href="#" role="button"></a>
                         </div>
@@ -294,16 +319,16 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <p>“Maecenas et facilisis quam. Nullam molestie, tellus eu laoreet euismod, massa dui interdum eros, eget imperdiet lorem elit eu libero. Sed faucibus ante vel metus vestibulum dictum. Morbi nec convallis neque. Pellentesque et orci tempus nunc malesuada mattis. Sed tempus orci volutpat hendrerit commodo.”</p>
-                        <p><strong>Ime i prezime</strong></p>
+                        <p class="cleanco-testimonials-content">“Kada god žurim uvek me prime preko reda.”</p>
+                        <p><strong>Uroš Ćulibrk</strong>, Royal Norwegian Embassy</p>
                     </div>
                     <div class="item">
-                        <p>“Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada.”</p>
-                        <p><strong>Ime i prezime</strong></p>
+                        <p class="cleanco-testimonials-content">“Godinama sarađujemo na obostrano zadovoljstvo.”</p>
+                        <p><strong>Željko Mileusnić</strong>, Philips</p>
                     </div>
                     <div class="item">
-                        <p>“Sed faucibus ante vel metus vestibulum dictum. Morbi nec convallis neque. Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus.”</p>
-                        <p><strong>Ime i prezime</strong></p>
+                        <p class="cleanco-testimonials-content">“Momci su za svaki dogovor, uvek nam izlaze u susret.”</p>
+                        <p><strong>Bojana Stević</strong>, Credit Agricole Bank</p>
                     </div>
                 </div>
 

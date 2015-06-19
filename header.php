@@ -38,7 +38,7 @@
                     <ul class="cleanco-header-info clearfix">
                         <li>
                             <i class="fa fa-phone"></i>
-                            <p>+381 11 614 93 31</br><span>office@cleanco.rs</span></p>
+                            <p>+381 69 55 44 33 2</br><span>office@cleanco.rs</span></p>
                         </li>
                         <li>
                             <i class="fa fa-map-marker"></i>
@@ -46,7 +46,7 @@
                         </li>
                         <li class="hidden-sm">
                             <i class="fa fa-clock-o"></i>
-                            <p>09-18h, sub: 09-15h</br><span>Nedeljom ne radimo</span></p>
+                            <p>08-20h</br><span>Nedeljom ne radimo</span></p>
                         </li>
                     </ul>
                 </div>
@@ -66,3 +66,15 @@
         </div>
     </header>
     <!-- FIXED HEADER ENDS -->
+
+     <!-- MOBILE HEADER -->
+     <header class="cleanco-header-mobile hidden-lg hidden-md hidden-sm">
+        <div class="container">
+            <div>
+                <i class="fa fa-phone"></i>
+                <span><a href="tel:+381695544332">069 55 44 33 2</a></span>
+            </div>
+
+        </div>
+    </header>
+    <!-- MOBILE HEADER ENDS -->

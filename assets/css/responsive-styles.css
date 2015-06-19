@@ -78,7 +78,11 @@
 
 	#cleanco-testimonials-carousel {
 		height: auto;
-	    min-height: 250px;
+	    min-height: 210px;
+	}
+
+	.cleanco-testimonials-content {
+	    font-size: 20px;
 	}
 
 	.carousel-indicators {
@@ -114,6 +118,10 @@
 		background-position: center center;
 	}
 
+	.cleanco-big-image-text {
+		padding-top: 45px;
+	}
+
 	.cleanco-big-image-text img {
 		width: 30%;
 	}
@@ -123,7 +131,7 @@
 	}
 
 	.cleanco-logo {
-		margin-bottom: 35px;
+		margin-bottom: 25px;
 	}
 
 	.cleanco-big-image-hero {
@@ -223,6 +231,7 @@
 
 	#cleanco-testimonials-carousel {
 		height: auto;
+		min-height: 210px;
 	}
 
 	article.cleanco-testimonials {
@@ -235,6 +244,10 @@
 
 	.cleanco-testimonials-carousel, .cleanco-testimonials {
 		height: auto;
+	}
+
+	.cleanco-testimonials-content {
+	    font-size: 20px;
 	}
 
 	.cleanco-services-single-inner {

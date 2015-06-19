@@ -123,13 +123,16 @@ $(document).ready(function(){
 	// Google Maps API
 	var map;
 	var marker;
+	var secondMarker;
+	var thirdMarker;
+
 	function initialize() {
-	  var cleanco = new google.maps.LatLng(44.8345862, 20.4148105);
+	  var cleanco = new google.maps.LatLng(44.8095765, 20.4298791);
 	  var windowWidth = $(window).width();
 	  var isDraggable = windowWidth > 732 ? true : false;
 	  var mapOptions = {
-	    zoom: 15,
-	    center: cleanco,
+	    zoom: 14,
+	    center: new google.maps.LatLng(44.8129141,20.4246971),
 	    scrollwheel: false,
 	    draggable: isDraggable
 	  };
@@ -142,13 +145,27 @@ $(document).ready(function(){
       '</div>'+
       '<h3 id="firstHeading" class="firstHeading">CleanCo</h3>'+
       '<div id="bodyContent">'+
-      '<p>Klare Cetkin 1e/12</p>' +
-      '<p>+381 11 64 93 31</p>' +
+      '<p>Milentija Popovića 5a</p>' +
+      '<p>+381 69 55 44 33 2</p>' +
+      '</div>'+
+      '</div>';
+
+      var secondContentString = '<div id="cleanco-map-info-content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">CleanCo</h3>'+
+      '<div id="bodyContent">'+
+      '<p>Đorđa Stanojevića 12-14</p>' +
+      '<p>+381 69 55 44 33 2</p>' +
       '</div>'+
       '</div>';
 
 	  var infowindow = new google.maps.InfoWindow({
 	      content: contentString
+	  });
+
+	  var secondInfowindow = new google.maps.InfoWindow({
+	      content: secondContentString
 	  });
 
 	  marker = new google.maps.Marker({
@@ -157,10 +174,22 @@ $(document).ready(function(){
 	    animation: google.maps.Animation.DROP,
 	    title: 'Cleanco'
 	  });
+
+	  secondMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(44.8152453,20.4203223),
+        map: map
+      });
+
 	  google.maps.event.addListener(marker, 'click', toggleBounce);
+
+	  google.maps.event.addListener(secondMarker, 'click', secondToggleBounce);
 
 	  google.maps.event.addListener(marker, 'click', function() {
 	    infowindow.open(map,marker);
+	  });
+
+	  google.maps.event.addListener(secondMarker, 'click', function() {
+	    secondInfowindow.open(map,secondMarker);
 	  });
 
 	};
@@ -171,6 +200,15 @@ $(document).ready(function(){
 	    marker.setAnimation(null);
 	  } else {
 	    marker.setAnimation(google.maps.Animation.BOUNCE);
+	  }
+	}
+
+	function secondToggleBounce() {
+
+	if (secondMarker.getAnimation() != null) {
+	    secondMarker.setAnimation(null);
+	  } else {
+	    secondMarker.setAnimation(google.maps.Animation.BOUNCE);
 	  }
 	}
 
@@ -199,7 +237,9 @@ $(document).ready(function(){
 	});
 
 	// Datepicker
-	$('.datepicker').datepicker()
+	$('.datepicker').datepicker({
+		format: 'dd/mm/yyyy'
+	})
 		.on("changeDate", function(){
 			$(this).datepicker("hide");
 	});

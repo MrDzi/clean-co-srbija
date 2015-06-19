@@ -256,6 +256,32 @@ a:hover {
     background-color: #F1ED5C;
 }
 
+/********  Mobile Header  *********************/
+
+.cleanco-header-mobile {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 7px 0 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+}
+
+.cleanco-header-mobile i {
+    margin-right: 7px;
+    color: #bababa;
+}
+
+.cleanco-header-mobile a {
+    color: #F1ED5C;
+}
+
 
 /***********************************************
           BIG BKG IMAGE SECTION
@@ -323,6 +349,9 @@ a:hover {
     border-bottom: 1px solid #e4e3e3;
 }
 
+.cleanco-cta-inner {
+}
+
 .cleanco-cta-info p {
     color: #454545;
     font-size: 21px;
@@ -336,6 +365,13 @@ a:hover {
     padding: 30px 0 40px;
     display: none;
     width: 100%;
+}
+
+.cleanco-cta-form .cleanco-badge {
+    position: absolute;
+    top: 155px;
+    left: 25px;
+    opacity: 0.9;
 }
 
 .cleanco-cta-form-info p {
@@ -411,6 +447,10 @@ a:hover {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+#cleanco-scheduling {
+    position: relative;
 }
 
 #cleanco-scheduling .form-control {
@@ -632,8 +672,16 @@ input#date {
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
 }
 
+.cleanco-testimonials h2 {
+    margin-bottom: 70px;
+}
+
 #cleanco-testimonials-carousel {
-    height: 250px;
+    height: 240px;
+}
+
+.cleanco-testimonials-content {
+  font-size: 24px;
 }
 
 .carousel-inner {
@@ -732,8 +780,13 @@ input#date {
     margin-top: 30px;
 }
 
+.cleanco-mobile-contact p i {
+    color: #bababa;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
 .cleanco-mobile-contact span a {
-    font-weight: bold;
     color: #F1ED5C;
 }
 
