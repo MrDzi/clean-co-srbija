@@ -1,0 +1,276 @@
+/** BOOTSTRAP 3 SMALL DESKTOP **/
+@media (min-width: 990px) and (max-width: 1200px) {
+
+	.cleanco-big-image-hero {
+		width: 85%;
+	}
+
+	.cleanco-big-image-content-wrapper {
+		height: 590px;
+	}
+
+	.cleanco-big-image-bkg {
+		height: 590px;
+	}
+
+}
+
+
+/** BOOTSTRAP 3 TABLET **/
+@media (min-width: 750px) and (max-width: 990px) {
+
+	.cleanco-services-single-inner {
+		width: 100%;
+	}
+
+	.cleanco-big-image-hero {
+		width: 100%;
+	}
+
+	.cleanco-big-image-content-wrapper {
+		height: 540px;
+	}
+
+	.cleanco-big-image-bkg {
+		height: 540px;
+	}
+
+	.cleanco-big-image-hero h1 {
+		font-size: 36px;
+	}
+
+	.cleanco-big-image-hero p {
+		font-size: 26px;
+	}
+
+	.cleanco-cta-info p {
+		font-size: 17px;
+		line-height: 3.5;
+	}
+
+	.cleanco-cta-btn, .cleanco-form-btn {
+		width: 220px;
+		font-size: 15px;
+	}
+
+	.cleanco-main-section h2 {
+		font-size: 36px;
+		margin: 0 0 45px;
+	}
+
+	.cleanco-services h3 {
+		font-size: 22px;
+		margin: 30px 0;
+	}
+
+	.cleanco-clients {
+		height: 680px;
+	}
+
+	.cleanco-clients-rectangle {
+		margin-bottom: 35px;
+	}
+
+	.cleanco-services-single-inner {
+	    opacity: 1;
+	    top: 0;
+	}
+
+	#cleanco-testimonials-carousel {
+		height: auto;
+	    min-height: 210px;
+	}
+
+	.cleanco-testimonials-content {
+	    font-size: 20px;
+	}
+
+	.carousel-indicators {
+	    bottom: -10px;
+	}
+
+	.carousel-control {
+		top: 20px;
+	}
+	
+	.cleanco-header-social li {
+		padding-top: 0;
+	}
+
+	.cleanco-header-social a {
+		width: 43px;
+		height: 43px;
+	}
+
+	.cleanco-header-social a i {
+		font-size: 28px;
+		line-height: 1.7;
+	}
+	
+}
+
+
+/** BOOTSTRAP 3 MOBILE **/
+@media (max-width: 750px) {
+
+	.cleanco-big-image-bkg {
+		background-image: url("../img/header-mobile-bkg.jpg");
+		background-position: center center;
+	}
+
+	.cleanco-big-image-text {
+		padding-top: 45px;
+	}
+
+	.cleanco-big-image-text img {
+		width: 30%;
+	}
+
+	.cleanco-big-image-content-wrapper {
+		height: auto;
+	}
+
+	.cleanco-logo {
+		margin-bottom: 25px;
+	}
+
+	.cleanco-big-image-hero {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.cleanco-big-image-hero h1 {
+		font-size: 26px;
+	}
+
+	.cleanco-big-image-hero p {
+		font-size: 20px;
+	}
+
+	.cleanco-cta-info p {
+		font-size: 17px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.datepicker.dropdown-menu {
+		width: 90%;
+	}
+
+	.cleanco-form-btn {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.cleanco-cta-btn {
+		font-size: 15px;
+		width: 100%;
+	}
+
+	.cleanco-main-section article {
+		padding: 50px 0;
+	}
+
+	.cleanco-services {
+		padding: 50px 0 0 !important;
+	}
+
+	.cleanco-services-single-inner img {
+		width: 100%;
+	}
+
+	.cleanco-services-single-inner {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.cleanco-services-single-inner-text {
+		height: 270px;
+		overflow: hidden;
+	}
+
+	.cleanco-main-section h2 {
+		font-size: 36px;
+		margin: 0 0 45px;
+	}
+
+	.cleanco-services h3 {
+		font-size: 26px;
+		margin: 30px 0;
+	}
+
+	.cleanco-services-btn {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		color: #363636;
+		text-align: center;
+		text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	}
+
+	.cleanco-clients {
+		height: auto;
+		background-image: none;
+		background-color: #252739;
+	}
+
+	.cleanco-clients-rectangle {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#cleanco-testimonials-carousel {
+		height: auto;
+		min-height: 210px;
+	}
+
+	article.cleanco-testimonials {
+		padding: 50px 0 60px;
+	}
+
+	.carousel-inner {
+		width: 100%;
+	}
+
+	.cleanco-testimonials-carousel, .cleanco-testimonials {
+		height: auto;
+	}
+
+	.cleanco-testimonials-content {
+	    font-size: 20px;
+	}
+
+	.cleanco-services-single-inner {
+	    opacity: 1;
+	    top: 0;
+	}
+
+	.carousel-indicators {
+	    bottom: -25px;
+	}
+
+	.cleanco-header-social a {
+		width: 45px;
+		height: 45px;
+	}
+
+	.cleanco-header-social a i {
+		font-size: 28px;
+		line-height: 1.7;
+	}
+
+	.cleanco-footer-copyright p {
+		font-size: 14px;
+	}
+
+}

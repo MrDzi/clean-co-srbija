@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'DINNextLTPro-Light';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Light.eot');
   src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Light.woff2') format('woff2'),
        url('../fonts/DINNextLTPro-Light.woff') format('woff'),
        url('../fonts/DINNextLTPro-Light.ttf') format('truetype'),
        url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Regular';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Regular.eot');
   src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Regular.woff2') format('woff2'),
@@ -23,19 +23,19 @@
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Medium';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Medium.eot');
   src: url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Medium.woff2') format('woff2'),
        url('../fonts/DINNextLTPro-Medium.woff') format('woff'),
        url('../fonts/DINNextLTPro-Medium.ttf') format('truetype'),
        url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Italic';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Italic.eot');
   src: url('../fonts/DINNextLTPro-Italic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Italic.woff2') format('woff2'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextLTPro-Bold';
+  font-family: 'DINNextLTPro';
   src: url('../fonts/DINNextLTPro-Bold.eot');
   src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextLTPro-Bold.woff2') format('woff2'),
@@ -60,31 +60,31 @@
 
 
 @font-face {
-  font-family: 'DINNextSlabPro-Medium';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Medium.eot');
   src: url('../fonts/DINNextSlabPro-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Medium.woff2') format('woff2'),
        url('../fonts/DINNextSlabPro-Medium.woff') format('woff'),
        url('../fonts/DINNextSlabPro-Medium.ttf') format('truetype'),
        url('../fonts/DINNextSlabPro-Medium.svg#DINNextSlabPro-Medium') format('svg');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Light';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Light.eot');
   src: url('../fonts/DINNextSlabPro-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Light.woff2') format('woff2'),
        url('../fonts/DINNextSlabPro-Light.woff') format('woff'),
        url('../fonts/DINNextSlabPro-Light.ttf') format('truetype'),
        url('../fonts/DINNextSlabPro-Light.svg#DINNextSlabPro-Light') format('svg');
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Bold';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Bold.eot');
   src: url('../fonts/DINNextSlabPro-Bold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Bold.woff2') format('woff2'),
@@ -96,7 +96,7 @@
 }
 
 @font-face {
-  font-family: 'DINNextSlabPro-Regular';
+  font-family: 'DINNextSlabPro';
   src: url('../fonts/DINNextSlabPro-Regular.eot');
   src: url('../fonts/DINNextSlabPro-Regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/DINNextSlabPro-Regular.woff2') format('woff2'),
@@ -116,21 +116,697 @@
    ========================================================================== */
 
 body {
-    font-family: 'DINNextLTPro-Light';
+    font-family: 'DINNextLTPro', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DINNextSlabPro';    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cleanco-default-btn {
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 30px;
+    letter-spacing: 1.1px;
+    display: block;
+    text-align: center;
+    width: 235px;
+}
+
+.cleanco-default-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cleanco-default-btn i {
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 
+/***********************************************
+            FIXED HEADER
+***********************************************/
+
+.cleanco-header-fixed {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 10px 0 13px;
+    position: fixed;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.cleanco-header-info li {
+    float: left;
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 35px;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #474747;
+}
+
+.cleanco-header-info li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0 none;
+}
+
+.cleanco-header-info li p {
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.cleanco-header-info li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 34px;
+    color: #474747;
+}
+
+.cleanco-header-info span {
+    font-weight: 300;
+    color: #b4b4b4;
+}
+
+.cleanco-header-social li {
+    float: right;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.cleanco-header-social a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cleanco-header-social a i {
+    font-size: 25px;
+    color: #1b1b1b;
+    line-height: 1.5;
+}
+
+.cleanco-header-social a:hover {
+    background-color: #F1ED5C;
+}
+
+/********  Mobile Header  *********************/
+
+.cleanco-header-mobile {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 7px 0 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+}
+
+.cleanco-header-mobile i {
+    margin-right: 7px;
+    color: #bababa;
+}
+
+.cleanco-header-mobile a {
+    color: #F1ED5C;
+}
 
 
+/***********************************************
+          BIG BKG IMAGE SECTION
+***********************************************/
+
+.cleanco-big-image-bkg {
+    background-image: url("../img/header-bkg.jpg");
+    position: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+}
+
+.cleanco-big-image-content-wrapper {
+    height: 640px;
+}
+
+.cleanco-big-image-text {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.cleanco-logo {
+    display: block;
+    margin-bottom: 55px;
+}
+
+.cleanco-big-image-hero {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.cleanco-big-image-hero h1 {
+    font-family: 'DINNextSlabPro';
+    font-size: 46px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    -webkit-text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+    -moz-text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+    text-shadow: 1px 2px 0px rgba(0,0,0,0.6);
+}
+
+.cleanco-big-image-hero p {
+    font-family: 'DINNextSlabPro';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    -webkit-text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+    -moz-text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+}
 
 
+.cleanco-cta {
+    background-color: #fbfbfb;
+    background-image: url(../img/cleanco-cta-pattern.png);
+    padding: 25px 0;
+    border-bottom: 1px solid #e4e3e3;
+}
+
+.cleanco-cta-inner {
+}
+
+.cleanco-cta-info p {
+    color: #454545;
+    font-size: 21px;
+    line-height: 3;
+    margin-bottom: 0;
+}
+
+.cleanco-cta-form {
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e4e3e3;
+    padding: 30px 0 40px;
+    display: none;
+    width: 100%;
+}
+
+.cleanco-cta-form .cleanco-badge {
+    position: absolute;
+    top: 155px;
+    left: 25px;
+    opacity: 0.9;
+}
+
+.cleanco-cta-form-info p {
+    font-size: 14px;
+    font-style: italic;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.cleanco-cta-form-info p span {
+    color: #E2382A;
+    font-weight: bold;
+}
+
+.cleanco-cta-btn {
+    position: relative;
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 17px 25px;
+    display: block;
+    text-align: left;
+    width: 246px;
+    border: 1px solid #45b3e4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cleanco-cta-btn i {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cleanco-cta-btn:focus,
+.cleanco-cta-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cleanco-scheduling-btn.form-opened {
+    background-color: transparent;
+    color: #454545;
+    border: 1px solid transparent;
+}
+
+.cleanco-form-btn {
+    position: relative;
+    border-radius: 2px;
+    background-color: #45b3e4;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 17px 20px;
+    display: block;
+    text-align: center;
+    width: 246px;
+    border: 1px solid #45b3e4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#cleanco-scheduling {
+    position: relative;
+}
+
+#cleanco-scheduling .form-control {
+      width: 100%;
+      height: 40px;
+      padding: 6px 12px;
+      font-size: 16px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #999;
+      border-radius: 2px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#cleanco-scheduling .form-control.error {
+    border: 1px solid #333;
+    border-bottom-right-radius: 0;
+}
+
+#cleanco-scheduling label {
+    margin-bottom: 0;
+    color: #888;
+}
+
+#cleanco-scheduling label.error {
+  font-weight: normal;
+  color: #fff;
+  background: #333;
+  padding: 0 7px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 13px;
+  line-height: 1.4;
+  position: absolute;
+  right: 15px;
+}
+
+#cleanco-scheduling label span {
+    color: #45b3e4;
+}
+
+#cleanco-scheduling .form-control[disabled] {
+    opacity: 0;
+}
+
+#customLocation.form-control {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#cleanco-scheduling .form-control:focus {
+    border: 1px solid #333;
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+
+input#date {
+    cursor: pointer;
+}
+
+.cleanco-form-messages h2 {
+    margin-bottom: 20px;
+}
+
+.cleanco-form-messages {
+    text-align: center;
+}
+
+.cleanco-form-messages p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.cleanco-form-messages i {
+    font-size: 60px;
+    color: #45b3e4;
+    margin-bottom: 30px;
+}
+
+.cleanco-form-messages.error i {
+    color: #FE5F55;
+}
+
+/***********************************************
+          MAIN SECTION
+***********************************************/
+
+.cleanco-main-section {
+    background-color: #fff;
+}
+
+.cleanco-main-section h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0 0 60px;
+}
+
+.cleanco-main-section article {
+    padding: 60px 0;
+}
 
 
+/***********  SERVICES SECTION  ***************/
+
+.cleanco-services h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.cleanco-services-single-inner {
+    width: 92%;
+    opacity: 0;
+    position: relative;
+    top: 30px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    transition-property: opacity, top;
+}
+
+.cleanco-services-single-inner-after {
+    opacity: 1;
+    top: 0;
+}
+
+.cleanco-services-single-inner-left {
+    float: left;
+}
+
+.cleanco-services-single-inner-right {
+    float: right;
+}
+
+.cleanco-services-single-inner-middle {
+    margin: 0 auto;
+}
+
+.cleanco-services-single-inner img {
+    border-radius: 4px;
+}
 
 
+/***********  OUR CLIENTS SECTION  ***********/
 
+.cleanco-clients {
+    height: 600px;
+    background-image: url(../img/cleanco-clients.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+.cleanco-clients h2 {
+    color: #fff;
+}
 
+.cleanco-clients-rectangle {
+    background-color: #fff;
+    border-radius: 3px;
+    width: 216px;
+    height: 132px;
+    display: table;
+    margin-bottom: 55px;
+}
+
+.cleanco-clients-rectangle-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cleanco-clients-rectangle-inner img {
+    margin: auto;
+}
+
+.cleanco-tablet-client p {
+   font-family: 'DINNextLTPro', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/***********  TESTIMONIALS SECTION  ***********/
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+    margin: 0;
+}
+
+.carousel-indicators li.active {
+    border: none;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+
+.cleanco-testimonials {
+    height: 460px;
+    background-image: url("../img/cleanco-testimonials-pattern.png");
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+}
+
+.cleanco-testimonials h2 {
+    margin-bottom: 70px;
+}
+
+#cleanco-testimonials-carousel {
+    height: 240px;
+}
+
+.cleanco-testimonials-content {
+  font-size: 24px;
+}
+
+.carousel-inner {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-inner p {
+    margin-bottom: 30px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 10%;
+    bottom: auto;
+    width: 8%;
+    font-size: 35px;
+    color: #c0c0c0;
+    text-align: center;
+    text-shadow: none;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    }
+
+.carousel-control:focus {
+    color: #c0c0c0;
+}
+
+.carousel-control:hover {
+    color: #ababab;
+}
+
+.carousel-control.left {
+    background-image: none;
+    left: 15px;
+}
+
+.carousel-control.right {
+    background-image: none;
+    right: 15px;
+}
+
+/***********  GOOGLE MAP SECTION  ***********/
+
+#cleanco-map {
+    background-color: #2e2e2e;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cleanco-map-info-content p {
+    margin-bottom: 0; 
+}
+
+#cleanco-map-info-content h3 {
+    margin-top: 10px;
+}
+
+#bodyContent p {
+    font-weight: normal;
+}
+
+/****************  FOOTER  ****************/
+
+.cleanco-main-footer {
+    background-color: #fff;
+}
+
+.cleanco-footer-black {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 25px 0 40px;
+    text-align: center;
+}
+
+.cleanco-footer-black h3 {
+    color: #F1ED5C;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.cleanco-footer-social {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cleanco-mobile-contact {
+    margin-top: 30px;
+}
+
+.cleanco-mobile-contact p i {
+    color: #bababa;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.cleanco-mobile-contact span a {
+    color: #F1ED5C;
+}
+
+.cleanco-footer-copyright {
+    z-index: 1;
+    text-align: center;
+    padding: 30px 0;
+    background-image: url("../img/cleanco-shadow.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.cleanco-footer-copyright p {
+    margin: 0;
+}
+
+.cleanco-footer-copyright a {
+    color: #333;
+    font-weight: bold;
+}
 
 /* ==========================================================================
    Helper classes
